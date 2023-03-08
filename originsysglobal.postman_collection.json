@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "cf2d0413-c0d4-4185-9669-b23932571939",
+		"name": "originsysglobal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16797512"
+	},
+	"item": [
+		{
+			"name": "hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hotel",
+							"value": "Golden Tulip",
+							"type": "text"
+						},
+						{
+							"key": "minPrice",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "maxPrice",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "fromDate",
+							"value": "04-10-2023",
+							"type": "text"
+						},
+						{
+							"key": "toDate",
+							"value": "17-10-2023",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "paris",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/originsysglobal/api/hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"originsysglobal",
+						"api",
+						"hotel"
+					],
+					"query": [
+						{
+							"key": "hotel",
+							"value": "Golden Tulip",
+							"disabled": true
+						},
+						{
+							"key": "minPrice",
+							"value": "50",
+							"disabled": true
+						},
+						{
+							"key": "maxPrice",
+							"value": "200",
+							"disabled": true
+						},
+						{
+							"key": "fromDate",
+							"value": "04-10-2023",
+							"disabled": true
+						},
+						{
+							"key": "toDate",
+							"value": "17-10-2023",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "paris",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
