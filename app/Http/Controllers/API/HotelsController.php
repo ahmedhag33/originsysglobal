@@ -32,13 +32,8 @@ class HotelsController extends Controller
     {
         $result = [];
 
-        $file = '';
-
-        if (file_exists('https://api.npoint.io/dd85ed11b9d8646c5709')) {
-            $file = 'https://api.npoint.io/dd85ed11b9d8646c5709';
-        } else {
-            $file = 'hotels.json';
-        }
+        $file = 'https://api.npoint.io/dd85ed11b9d8646c5709';
+        
         $jsonitem = file_get_contents($file);
 
         $objitems = json_decode($jsonitem);
